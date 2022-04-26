@@ -8,8 +8,12 @@ public class Game {
     
     
     public Game() {
+        this(Player.CROSS);
+    }
+    
+    public Game(Player startingPlayer) {
         board = new Board();
-        currentPlayer = Player.CROSS;
+        currentPlayer = startingPlayer;
     }
     
     public Player getCurrentPlayer() {
