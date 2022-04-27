@@ -1,11 +1,11 @@
 # Project PROJECTNAME
 
-ONE-PARAGRAPH DESCRIPTION OF YOUR GAME
+Tic-tac-toe game (2 players, 3x3 board).
 
 ## Team Members
 
-* FIRSTNAME LASTNAME (EMAIL), GITHUBACCOUNT
-* FIRSTNAME LASTNAME (EMAIL), GITHUBACCOUNT
+* Matthias Hauswirth (matthias.hauswirth@usi.ch), hauswirm
+* Luca Chiodini (luca.chiodini@usi.ch), lucach
 
 ## Mentor
 
