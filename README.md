@@ -1,12 +1,12 @@
 # Project Tango 3
 
-The traditional Tic-Tac-Toe game.
+Tic-tac-toe game (2 players, 3x3 board).
 https://en.wikipedia.org/wiki/Tic-tac-toe
 
 ## Team Members
 
-* FIRSTNAME LASTNAME (EMAIL), GITHUBACCOUNT
-* FIRSTNAME LASTNAME (EMAIL), GITHUBACCOUNT
+* Matthias Hauswirth (matthias.hauswirth@usi.ch), hauswirm
+* Luca Chiodini (luca.chiodini@usi.ch), lucach
 
 ## Mentor
 
