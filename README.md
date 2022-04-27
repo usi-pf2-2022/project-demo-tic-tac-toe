@@ -1,6 +1,7 @@
-# Project PROJECTNAME
+# Project Tango 3
 
 Tic-tac-toe game (2 players, 3x3 board).
+https://en.wikipedia.org/wiki/Tic-tac-toe
 
 ## Team Members
 
