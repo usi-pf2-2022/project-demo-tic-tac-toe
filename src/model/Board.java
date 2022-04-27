@@ -37,13 +37,7 @@ public class Board {
     }
     
     public boolean ownRow(Player player, int row) {
-        Player first = cells[row][0];
-        for (int col = 1; col < SIZE; col++) {
-            if (cells[row][col] != first) {
-                return false;
-            }
-        }
-        return true;
+        return ownSequence(player, row, 0, 0, 1);
     }
     
     public boolean ownCol(Player player) {
@@ -56,29 +50,20 @@ public class Board {
     }
     
     public boolean ownCol(Player player, int col) {
-        Player first = cells[0][col];
-        for (int row = 1; row < SIZE; row++) {
-            if (cells[row][col] != first) {
-                return false;
-            }
-        }
-        return true;
+        return ownSequence(player, 0, col, 1, 0);
     }
     
     public boolean ownMajorDiagonal(Player player) {
-        Player first = cells[0][0];
-        for (int i = 1; i < SIZE; i++) {
-            if (cells[i][i] != first) {
-                return false;
-            }
-        }
-        return true;
+        return ownSequence(player, 0, 0, 1, 1);
     }
     
     public boolean ownMinorDiagonal(Player player) {
-        Player first = cells[0][SIZE-1];
-        for (int i = 1; i < SIZE; i++) {
-            if (cells[i][SIZE-1-i] != first) {
+        return ownSequence(player, 0, SIZE - 1, 1, -1);
+    }
+    
+    public boolean ownSequence(Player player, int startRow, int startCol, int deltaRow, int deltaCol) {
+        for (int i = 0; i < SIZE; i++) {
+            if (cells[startRow + deltaRow * i][startCol + deltaCol * i] != player) {
                 return false;
             }
         }
