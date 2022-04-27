@@ -1,6 +1,7 @@
-# Project PROJECTNAME
+# Project Tango 3
 
-ONE-PARAGRAPH DESCRIPTION OF YOUR GAME
+The traditional Tic-Tac-Toe game.
+https://en.wikipedia.org/wiki/Tic-tac-toe
 
 ## Team Members
 
