@@ -11,7 +11,7 @@ public class GameTest {
     @Test
     public void testStartingPlayerIsCross() {
         Game g = new Game();
-        assertEquals(Player.CROSS, g.getCurrentPlayer());        
+        assertEquals(Player.CROSS, g.getCurrentPlayer());
     }
-    
+
 }
