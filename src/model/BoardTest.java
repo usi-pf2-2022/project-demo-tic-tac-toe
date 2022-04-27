@@ -10,6 +10,7 @@ public class BoardTest {
 
     private static final Player X = Player.CROSS;
     private static final Player O = Player.CIRCLE;
+    private static final Player E = null;
 
     
     @Test
@@ -50,15 +51,15 @@ public class BoardTest {
     @Test
     public void testXWinsFirstRow() {
         Board b = make(new Player[][] {{X, X, X},
-                                       {null, null, null},
-                                       {O, O, null}});
+                                       {E, E, E},
+                                       {O, O, E}});
         assertTrue(b.won(Player.CROSS));
     }
 
     @Test
     public void testXWinsMinorDiagonal() {
-        Board b = make(new Player[][] {{null, null, X},
-                                       {null, X, null},
+        Board b = make(new Player[][] {{E, E, X},
+                                       {E, X, E},
                                        {X, O, O}});
         assertTrue(b.won(Player.CROSS));
     }
