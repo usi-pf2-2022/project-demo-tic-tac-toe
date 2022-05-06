@@ -67,8 +67,9 @@
         <configuration>
           <configLocation>${checkstyle.config.file}</configLocation>
           <encoding>UTF-8</encoding>
-          <consoleOutput>true</consoleOutput>
+          <consoleOutput>false</consoleOutput>
           <failsOnError>false</failsOnError>
+          <violationSeverity>warning</violationSeverity>
           <linkXRef>false</linkXRef>
           <excludes>**/*Test.java</excludes>
         </configuration>
